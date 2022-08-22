@@ -131,8 +131,8 @@
      <div class="ps-3">
         <div class="card  border border-3 border-black bg-black text-white mb-3" >
            
-           
-              <div class="container p-4">
+           <!-- selecetd players -->
+              <div class="container p-4 d-flex flex-column justify-content-center align-items-center" style="max-width: 18rem;">
                 <h6>Selected V</h6>
               <ol>
                 <li>amy</li>
@@ -144,11 +144,43 @@
               </div>
             
           </div>
-          <div class="card border-black mb-3">
+          <div class="card  border border-3 border-black bg-black  mb-3">
             
-            <div class="card-body text-black">
-              
-            </div>
+            <!-- budget -->
+            <div class="container p-4  d-flex flex-column justify-content-center align-items-center">
+                <h6 class="text-light pb-3 " style="max-width: 18rem;">Budget</h6>
+
+                 <!-- perPlayer -->
+                  <div class="text-white-50 d-flex mb-3  ">
+                    <p>Per Player</p>
+                    <input class=" ms-2" type="text" style="width:80px;height:30px">
+                    
+                  </div>
+                  <button class="btn btn-primary">Calculate</button>
+                  
+                  <!-- player expenses -->
+                <div class="d-flex flex-column text-white-50 mt-3">
+
+                    <div class="d-flex">
+                        <p class="pe-2">Player Expenses</p>
+                       <p>$ <span>500</span> </p>
+                    </div>
+                <!-- manager -->
+                <div class="text-white-50 d-flex  ">
+                    <p>Manager</p>
+                    <input class=" ms-4" type="text" style="width:80px;height:30px">
+                    
+                  </div>
+
+                  <!-- coach -->
+                  <div class="text-white-50 d-flex  mb-3 ">
+                    <p>Coach</p>
+                    <input class=" ms-5" type="text" style="width:80px;height:30px">
+                    
+                  </div>
+                </div>
+                <button class="btn btn-primary">Calculate Total</button>
+              </div>
           </div>
      </div>
     
