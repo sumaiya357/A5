@@ -6,9 +6,13 @@
     width: 100%;
     height: 500px;
     
+    
 }
-
-.h1{
+.text-div{
+    margin-top: 100px;
+    padding-left: 200px;
+}
+/* .h1{
     padding-top:180px ;
     padding-left: 200px;
     
@@ -20,4 +24,4 @@
 .first-btn
 {
     margin-left: 380px;
-}
+} */
