@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=in, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input  id="input"type="text">
+    <button id="btn1">click</button>
+    <ol id="ol">
+        <p>Lists</p>
+        <!-- <li>
+
+        </li> -->
+    </ol>
+
+
+    <script>
+        document.getElementById('btn1').addEventListener('click', function(){
+            const inputField =document.getElementById('input')
+           
+                const v=document.querySelectorAll('#ol li').length
+             if(     v  > 1){
+           alert('please only 2')
+            return false;
+          }
+             console.log(v)
+            
+       
+            const value = inputField.value;
+            //console.log(value)
+
+            const olList = document.getElementById('ol')
+            const li = document.createElement("li")
+            li.innerText= value
+
+            olList.appendChild(li)
+             
+
+
+
+
+        //     if( inputField.value.length >2 ){
+        //     alert('please only 2')
+        //     return false;
+        //    }
+        //    const inputvalue = inputField.value;
+          
+        //    const olList = document.getElementById('ol')
+        //   const vv= olList.innerText= inputvalue
+
+        //   const newLi = document.createElement('li')
+        //   li.innerText = olList.innerText
+
+        //   olList.appendChild(li.innerText)
+        //    console.log(vv)
+          
+
+        })
+    </script>
+</body>
+</html>
